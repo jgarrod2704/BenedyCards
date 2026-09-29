@@ -1,0 +1,2 @@
+Guarda aquí las imágenes de tus cartas (por ejemplo dragon.png) y refiérelas en cartas.js como img:"cartas/dragon.png".
+Usa nombres sin espacios ni tildes y en minúsculas.
