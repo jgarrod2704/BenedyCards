@@ -17,10 +17,10 @@ const AJUSTES = {
     { id: "comun",      prob: 70, color: "#8a8a8a" },
     { id: "rara",       prob: 25, color: "#2f7bd0" },
     { id: "epica",      prob: 5,  color: "#b0389c", brillo: true },
-    { id: "legendaria", prob: 1,  color: "#e8a317", brillo: true }
+    { id: "legendaria", prob: 1,  color: "#e8a317", brillo: true },
   ],
   sobre: "",    // tu diseño de sobre, p. ej. "sobre.png" (proporción 17:25). Vacío = sobre por defecto
-  reverso: ""   // tu reverso de carta, p. ej. "reverso.png" (proporción 2:3). Vacío = por defecto
+  reverso: "",   // tu reverso de carta, p. ej. "reverso.png" (proporción 2:3). Vacío = por defecto
 };
 
 /* =====================================================
