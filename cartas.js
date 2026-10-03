@@ -26,7 +26,7 @@ const AJUSTES = {
      {n:"Dragón", rareza:"epica", img:"cartas/dragon.png"},
    ===================================================== */
 const CARTAS = [
-  {n:"Dragón", rareza:"comun", e:"🐉"},
+  {n:"Santo Entierro", rareza:"comun", img:"cartas/escudo_santoentierro.png},
   {n:"Fénix", rareza:"comun", e:"🔥"},
   {n:"Lobo", rareza:"rara", e:"🐺"},
   {n:"Zorro", rareza:"comun", e:"🦊"},
