@@ -62,4 +62,5 @@ const CARTAS = [
   {n:"Elefante", rareza:"comun", e:"🐘"},
   {n:"Pantera", rareza:"comun", e:"🐆"},
   {n:"Jirafa", rareza:"epica", e:"🦒"},
+  {n:"Santo Entierro", rareza:"comun", img:"cartas/escudo_santoentierro.png"},
 ];
