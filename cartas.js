@@ -19,7 +19,7 @@ const AJUSTES = {
     { id: "epica",      prob: 5,  color: "#b0389c", brillo: true },
     { id: "legendaria", prob: 1,  color: "#e8a317", brillo: true }
   ],
-  sobre: "benedicards.png",    // tu diseño de sobre, p. ej. "sobre.png" (proporción 17:25). Vacío = sobre por defecto
+  sobre: "sobre.png",    // tu diseño de sobre, p. ej. "sobre.png" (proporción 17:25). Vacío = sobre por defecto
   reverso: ""   // tu reverso de carta, p. ej. "reverso.png" (proporción 2:3). Vacío = por defecto
 };
 
