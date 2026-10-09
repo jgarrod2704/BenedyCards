@@ -125,7 +125,7 @@ const pages=()=>Math.ceil(CARDS.length/9);
 
 const backHTML=()=>A.reverso?`<div class="back" style="background:url('${A.reverso}') center/cover"></div>`:'<div class="back">?</div>';
 const foilHTML=()=>A.sobre
- ?`<div class="foil"><div class="top" style="background:url('${A.sobre}') 0 0/170px 250px"></div><div class="fbody" style="background:url('${A.sobre}') 0 -28px/170px 250px"></div></div>`
+ ?`<div class="foil"><div class="top" style="background:url('${A.sobre}') 0 0/170px 250px no-repeat,${A.sobreFondo||'transparent'}"></div><div class="fbody" style="background:url('${A.sobre}') 0 -28px/170px 250px no-repeat,${A.sobreFondo||'transparent'}"></div></div>`
  :`<div class="foil"><div class="top"></div><div class="fbody"><span>✨</span><b>SOBRE</b><small>${PACK_SIZE} cartas</small></div></div>`;
 function cardHTML(c){return c.img?`<img class="art" src="${c.img}" alt="">`:`<div class="emo">${c.e}</div><b>${c.n}</b>`}
 
@@ -231,6 +231,7 @@ $("prev").onclick=()=>{page--;render()};$("next").onclick=()=>{page++;render()};
 $("reset").onclick=()=>{if(confirm("¿Borrar todo el progreso?")){S={coins:A.monedasIniciales,own:{},last:"",streak:0,done:[]};page=0;say("");render()}};
 $("test").hidden=!TEST_MODE;
 $("test").onclick=()=>{S.coins+=500;say("+500🪙 de prueba");render()};
+[A.sobre,A.reverso].forEach(u=>{if(u)new Image().src=u}); /* precarga los diseños para que no tarden al abrir el sobre */
 document.title=A.titulo;document.querySelector("h1").textContent="📖 "+A.titulo;
 $("buy").textContent=`📦 Abrir sobre (${PACK_COST}🪙)`;
 $("rules").textContent=`Completa una página (9/9) y ganas ${PAGE_BONUS}🪙. Las repetidas te dan ${DUP}🪙.`;
